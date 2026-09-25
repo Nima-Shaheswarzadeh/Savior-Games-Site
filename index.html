@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.home">منجی گیمز — بازی حکومت‌سازی تاریخی</title>
+  <meta name="description" content="منجی — یک بازی حکومت‌سازی تاریخی در حال ساخت؛ شهر، اقتصاد، ارتش و جهان.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">پرش به محتوا</a>
+  <header id="siteHeader" class="site-header"></header>
+
+  <main id="main">
+    <!-- ۱. Hero — متن یک‌طرف، آرتورک سینمایی طرف دیگر (spec §6.1) -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="home.kicker">منجی — بازی حکومت‌سازی تاریخی</p>
+          <h1 data-i18n-html="home.title">حکومت تاریخی خودت رو بساز؛<br>تصمیم‌هات مسیر تاریخ رو عوض می‌کنه</h1>
+          <p class="hero-sub" data-i18n="home.sub">شهر می‌سازی، اقتصادت را برمی‌گردانی و ارتشت را به میدان می‌فرستی. «منجی»، بازی حکومت‌سازی تاریخی، در حال ساخت است — و این تازه آغاز راه است.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="world.html" data-i18n="home.cta1">کشف دنیای بازی</a>
+            <a class="btn btn-outline" href="progress.html" data-i18n="home.cta2">روند توسعه</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="art-frame frame-corners">
+            <img src="images/home-hero.jpg" alt="فرمانروا در برابر شهر و ارتش — آرتورک سینمایی" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ۲. چهار کارت باریک، هرکدام یک پیام -->
+    <section class="section-sm" aria-label="بخش‌های بازی">
+      <div class="container">
+        <div class="feature-grid">
+          <a class="card feature-card reveal" href="city.html">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 20v-6a6.5 6.5 0 0 1 13 0v6"/><path d="M3.5 20h17"/><path d="M12 7.5V4.8"/><circle cx="12" cy="3.8" r="1"/><path d="M12 20v-4.5"/></svg></span>
+            <h3 data-i18n="home.card1.t">شهر و ساختمان‌ها</h3>
+            <p data-i18n="home.card1.l">از مسجد تا پادگان؛ هر ساختمان، یک ابزار حکومت.</p>
+          </a>
+          <a class="card feature-card reveal" href="resources.html">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7.8l3.2 4.2-3.2 4.2L8.8 12z"/></svg></span>
+            <h3 data-i18n="home.card2.t">منابع و اقتصاد</h3>
+            <p data-i18n="home.card2.l">شش منبع، یک چرخه‌ی زنده؛ معادله‌ی قدرت.</p>
+          </a>
+          <a class="card feature-card reveal" href="army.html">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 18.5l2 .5L18.5 8l-2.5-2.5L6 16.5l-.5 2z"/><path d="M14.5 4.5l5 5"/></svg></span>
+            <h3 data-i18n="home.card3.t">ارتش و نبرد</h3>
+            <p data-i18n="home.card3.l">چهار نیرو، یک چرخه‌ی برتری؛ ترکیب درست برنده است.</p>
+          </a>
+          <a class="card feature-card reveal" href="world.html">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4.5L3.5 6.5v13L9 17.5l6 2 5.5-2v-13L15 6.5l-6-2z"/><path d="M9 4.5v13M15 6.5v13"/></svg></span>
+            <h3 data-i18n="home.card4.t">جهان و تعامل</h3>
+            <p data-i18n="home.card4.l">بازار، اتحاد و فورت‌ها؛ جهانی زنده منتظر توست.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ۳. سکشن آرام + Progress زنده -->
+    <section class="section">
+      <div class="container">
+        <div class="calm-inner reveal">
+          <div class="ornament"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7.2" y="7.2" width="9.6" height="9.6"/><rect x="7.2" y="7.2" width="9.6" height="9.6" transform="rotate(45 12 12)"/></svg></div>
+          <h2 class="h-section" data-i18n="home.calm.h">یک پروژه بزرگ، ساخته‌شده در ایران‌زمین</h2>
+          <p class="calm-quote" data-i18n="home.calm.quote">ما باور داریم تاریخ این سرزمین، بزرگ‌ترین بستر داستان دنیاست؛ منجی را برای همین می‌سازیم.</p>
+          <div class="calm-bar" id="homeBar">
+            <span class="tp-bar"><span class="tp-fill" style="--p:68%"></span></span>
+            <span class="calm-pct" id="homeBarPct">۶۸٪</span>
+          </div>
+          <p class="calm-label" data-i18n="home.calm.bar">پیشرفت کلی پروژه</p>
+          <a class="btn btn-outline btn-sm" href="progress.html" data-i18n="home.calm.link">مشاهده جزئیات</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QuoteBanner پایانی -->
+    <section class="quote-banner">
+      <div class="ornament"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7.2" y="7.2" width="9.6" height="9.6"/><rect x="7.2" y="7.2" width="9.6" height="9.6" transform="rotate(45 12 12)"/></svg></div>
+      <p class="q-text" data-i18n-html="home.quote">آسمان را در خود بپوشان از آفرینش و هنر،<br>تا آن‌جا که ساقط نشود ستونش</p>
+      <p class="q-by" data-i18n="home.quote.by">— حافظ</p>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="site-footer"></footer>
+  <div id="modals"></div>
+
+  <script>window.MJ_CONFIG = window.MJ_CONFIG || {};</script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

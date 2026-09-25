@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.news">اخبار و Devlog — منجی گیمز</title>
+  <meta name="description" content="منجی چطور ساخته می‌شود؟ ویدیوها و گزارش‌های پشت صحنه‌ی ساخت بازی.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="news">
+  <a class="skip" href="#main">پرش به محتوا</a>
+  <header id="siteHeader" class="site-header"></header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1 data-i18n="news.hero.t">منجی چطور ساخته می‌شود؟</h1>
+        <p class="lead" data-i18n="news.hero.s">ویدیوها و گزارش‌های پشت صحنه‌ی ساخت منجی — هر هفته.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- فیلتر ساده (اسکرول افقی در موبایل) -->
+        <div class="pills" id="newsFilters" role="group" aria-label="فیلتر Devlog">
+          <button type="button" class="pill active" data-cat="all" data-i18n="news.f.all">همه</button>
+          <button type="button" class="pill" data-cat="dev" data-i18n="news.f.dev">توسعه</button>
+          <button type="button" class="pill" data-cat="graphics" data-i18n="news.f.graphics">گرافیک</button>
+          <button type="button" class="pill" data-cat="gameplay" data-i18n="news.f.gameplay">گیم‌پلی</button>
+          <button type="button" class="pill" data-cat="tech" data-i18n="news.f.tech">فنی</button>
+        </div>
+
+        <!-- جدیدترین Devlog: Thumbnail بزرگ + Play -->
+        <div id="featuredSlot"></div>
+
+        <!-- Devlogهای قبلی -->
+        <h2 class="h-section news-prev-title" data-i18n="news.prev">بازدیدهای قبلی</h2>
+        <div class="devlog-grid" id="devlogGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="site-footer"></footer>
+  <div id="modals"></div>
+
+  <script>window.MJ_CONFIG = window.MJ_CONFIG || {};</script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

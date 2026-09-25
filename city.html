@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.city">شهر و ساختمان‌ها — منجی گیمز</title>
+  <meta name="description" content="ساختمان‌های شهر منجی در چهار دسته: حکومتی، نظامی، اقتصادی، دفاعی و پشتیبانی.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="city">
+  <a class="skip" href="#main">پرش به محتوا</a>
+  <header id="siteHeader" class="site-header"></header>
+
+  <main id="main">
+    <!-- تصویر بزرگ شهر بالای صفحه (spec §6.2) -->
+    <section class="page-hero">
+      <div class="ph-bg"><img src="images/city-banner.jpg" alt="نمای پانورامایی از شهر تاریخی منجی"></div>
+      <div class="container">
+        <h1 data-i18n="city.hero.t">شهر و ساختمان‌ها</h1>
+        <p class="lead" data-i18n="city.hero.s">هر ساختمان، یک تصمیم حکومتی است؛ انتخاب کن با چه چیزی حکومت داری.</p>
+      </div>
+    </section>
+
+    <!-- ۴ تب دسته‌بندی + کارت ساختمان‌ها (فقط دسته‌ی انتخابی) -->
+    <section class="section">
+      <div class="container">
+        <div class="tabs" id="cityTabs" role="tablist" aria-label="دسته‌بندی ساختمان‌ها">
+          <button type="button" class="tab" role="tab" data-tab="government" aria-selected="true" data-i18n="city.tab.g">حکومتی</button>
+          <button type="button" class="tab" role="tab" data-tab="military" aria-selected="false" data-i18n="city.tab.m">نظامی</button>
+          <button type="button" class="tab" role="tab" data-tab="economy" aria-selected="false" data-i18n="city.tab.e">اقتصادی</button>
+          <button type="button" class="tab" role="tab" data-tab="defense" aria-selected="false" data-i18n="city.tab.d">دفاعی و پشتیبانی</button>
+        </div>
+        <div class="items-grid" id="buildingsGrid"></div>
+      </div>
+    </section>
+
+    <!-- مقایسه تصویری سطح ۱ → سطح بالاتر (نه متن زیاد) -->
+    <section class="section-sm">
+      <div class="container level-compare">
+        <div class="ornament"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="7.2" y="7.2" width="9.6" height="9.6"/><rect x="7.2" y="7.2" width="9.6" height="9.6" transform="rotate(45 12 12)"/></svg></div>
+        <h2 class="h-section" data-i18n="city.level.h">از سطح ۱ تا شکوه</h2>
+        <p class="lead center" data-i18n="city.level.s">همان ساختمان؛ در هر سطح، شکل و قدرتش بزرگ‌تر می‌شود.</p>
+        <div class="level-grid reveal">
+          <figure class="level-card">
+            <span class="lv-art">
+              <svg viewBox="0 0 220 150" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 138h192"/>
+                <path d="M55 138V76h99v62"/>
+                <path d="M55 76v-9h11v9h11v-9h11v9h11v-9h11v9h11v-9h11v9h11v-9h11v9h11v-9h11v9h11v-9h11v9"/>
+                <path d="M34 138V56h28v82"/>
+                <path d="M34 56v-9h7v9h7v-9h7v9h7v-9h7v9"/>
+                <path d="M158 138V56h28v82"/>
+                <path d="M158 56v-9h7v9h7v-9h7v9h7v-9h7v9"/>
+                <path d="M100 138v-24a10 10 0 0 1 20 0v24"/>
+              </svg>
+            </span>
+            <figcaption data-i18n="city.level.l1">سطح ۱</figcaption>
+          </figure>
+          <span class="level-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></svg>
+          </span>
+          <figure class="level-card lv-up">
+            <span class="lv-art">
+              <svg viewBox="0 0 220 150" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 142h200"/>
+                <path d="M84 142V34h52v108"/>
+                <path d="M84 34v-9h13v9h13v-9h13v9h13v-9h13v9"/>
+                <path d="M110 25V10"/>
+                <path d="M110 10l14 4.5L110 19"/>
+                <path d="M36 142V62h32v80"/>
+                <path d="M36 62v-9h8v9h8v-9h8v9h8v-9h8v9"/>
+                <path d="M152 142V62h32v80"/>
+                <path d="M152 62v-9h8v9h8v-9h8v9h8v-9h8v9"/>
+                <path d="M68 142V92h16M136 142V92h16"/>
+                <path d="M10 142v-34h26M184 142v-34h26"/>
+                <path d="M100 142v-22a10 10 0 0 1 20 0v22"/>
+                <path d="M104 50h12"/>
+              </svg>
+            </span>
+            <figcaption data-i18n="city.level.l3">سطح ۳ و بالاتر</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="site-footer"></footer>
+  <div id="modals"></div>
+
+  <script>window.MJ_CONFIG = window.MJ_CONFIG || {};</script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

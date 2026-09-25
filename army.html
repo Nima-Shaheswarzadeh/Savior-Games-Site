@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.army">ارتش و نبرد — منجی گیمز</title>
+  <meta name="description" content="چهار نیروی ارتش منجی و چرخه‌ی برتری آن‌ها؛ منجنیق، لشکرکشی و دفاع.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="army">
+  <a class="skip" href="#main">پرش به محتوا</a>
+  <header id="siteHeader" class="site-header"></header>
+
+  <main id="main">
+    <!-- آرتورک سینمایی میدان نبرد + تیتر (spec §6.4) -->
+    <section class="page-hero">
+      <div class="ph-bg"><img src="images/battle-hero.jpg" alt="میدان نبرد — پیاده‌نظام، کماندار، سواره‌نظام و منجنیق"></div>
+      <div class="container">
+        <h1 data-i18n="army.hero.t">ارتش بزرگ کافی نیست؛ ترکیب درست مهم‌تر است.</h1>
+        <p class="lead" data-i18n="army.hero.s">چهار نیرو، یک چرخه؛ ترکیب، تاکتیک است.</p>
+      </div>
+    </section>
+
+    <!-- ۴ کارت نیرو -->
+    <section class="section">
+      <div class="container">
+        <div class="unit-grid">
+          <article class="card unit-card reveal">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l12-12"/><path d="M13.5 5.5l5 5-2.6.4L14 8.1z"/></svg></span>
+            <h3 data-i18n="army.u1.t">پیاده‌نظام</h3>
+            <p data-i18n="army.u1.l">تن خط مقدم؛ در دفاع و درگیری نزدیک، سنگر توست.</p>
+          </article>
+          <article class="card unit-card reveal">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 4.5c5.5 2.5 5.5 12.5 0 15"/><path d="M6.5 4.5v15"/><path d="M6.5 12h11"/><path d="M17.5 12l-2.2-2.2M17.5 12l-2.2 2.2"/></svg></span>
+            <h3 data-i18n="army.u2.t">کماندار</h3>
+            <p data-i18n="army.u2.l">آسیب از دور؛ خط را خالی می‌کند قبل از رسیدن دشمن.</p>
+          </article>
+          <article class="card unit-card reveal">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 21c0-4.5 1-7.5 3.5-9.5L12.5 7l.8 2c2.8.6 4.2 2.4 4.2 4.6l-2.8-.9-.7 2.4c-.5 3.3-2.3 4.9-4.5 4.9z"/><circle cx="14.6" cy="11.2" r=".6" fill="currentColor" stroke="none"/><path d="M12.5 7l1-2.5 1.5 2"/></svg></span>
+            <h3 data-i18n="army.u3.t">سواره‌نظام</h3>
+            <p data-i18n="army.u3.l">سرعت و تعقیب؛ ضربه‌ی قاضی‌کننده در زمین باز.</p>
+          </article>
+          <article class="card unit-card reveal">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 20L12 6.5l7.5 13.5"/><path d="M3.5 20h17"/><path d="M12 6.5l5.5-3.2"/><circle cx="18.5" cy="3.3" r="1.4"/><path d="M12 6.5l-4 2"/></svg></span>
+            <h3 data-i18n="army.u4.t">منجنیق</h3>
+            <p data-i18n="army.u4.l">خارج از چرخه؛ کارش دیوارها و برج‌هاست.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- چرخه برتری نیروها (SVG مقیاس‌پذیر با Viewbox نسبی) + منجنیق جدا -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cycle-wrap reveal">
+          <div id="cycleSvg" aria-label="چرخه‌ی برتری نیروها"></div>
+          <div class="cycle-aside">
+            <h2 class="h-section" data-i18n="army.cycle.h">چرخه‌ی برتری نیروها</h2>
+            <p class="lead" data-i18n="army.cycle.note">در برابر نیروی بعدی در چرخه، هر نیرو با ۱.۵ برابر قدرت مؤثر می‌جنگد.</p>
+            <div class="card treb-note">
+              <div class="treb-head">
+                <span class="fc-icon sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 20L12 6.5l7.5 13.5"/><path d="M3.5 20h17"/><path d="M12 6.5l5.5-3.2"/><circle cx="18.5" cy="3.3" r="1.4"/><path d="M12 6.5l-4 2"/></svg></span>
+                <h3 data-i18n="army.treb.h">منجنیق — خارج از چرخه</h3>
+              </div>
+              <p data-i18n="army.treb.p">منجنیق نقشی تخصصی دارد: تخریب دیوار، برج و ارگ. وقتی می‌خواهی شهری را بگیری، او را با خود ببر.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- دو کارت پایانی: لشکرکشی / دفاع -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="camp-grid">
+          <article class="card camp-card reveal">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l12-12"/><path d="M13.5 5.5l5 5-2.6.4L14 8.1z"/></svg></span>
+            <h3 data-i18n="army.camp.h">لشکرکشی</h3>
+            <p data-i18n="army.camp.p">شهر حریف را شکست بده، منابعش را ببر و مرزهایت را گسترش بده — اما حواست به چرخه‌ی برتری باشد.</p>
+          </article>
+          <article class="card camp-card reveal">
+            <span class="fc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/></svg></span>
+            <h3 data-i18n="army.def.h">دفاع</h3>
+            <p data-i18n="army.def.p">دیوارها، برج‌ها و شفاخانه‌ها؛ وقتی مهاجم می‌آید، شهر باید ایستاده بماند. سقوط شهر، سقوط حکومت است.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="site-footer"></footer>
+  <div id="modals"></div>
+
+  <script>window.MJ_CONFIG = window.MJ_CONFIG || {};</script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title.progress">روند توسعه — منجی گیمز</title>
+  <meta name="description" content="پیشرفت زنده‌ی پروژه‌ی منجی — عدد و درصد‌ها مستقیم از گوگل‌شیت پروژه خوانده می‌شوند.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="progress">
+  <a class="skip" href="#main">پرش به محتوا</a>
+  <header id="siteHeader" class="site-header"></header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1 data-i18n="prog.hero.t">روند توسعه</h1>
+        <p class="lead" data-i18n="prog.hero.s">ارقام زنده از گوگل‌شیت پروژه — بدون هاردکد.</p>
+      </div>
+    </section>
+
+    <!-- صفحه‌ای خیلی خلوت: یک حلقه، ۷ ردیف، ۳ کارت (spec §6.6) -->
+    <section class="section">
+      <div class="container">
+        <div class="ring-wrap reveal">
+          <div class="ring" id="ring">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#8F5730"></stop>
+                  <stop offset="1" stop-color="#DA9762"></stop>
+                </linearGradient>
+              </defs>
+              <circle class="ring-bg" cx="100" cy="100" r="86"></circle>
+              <circle class="ring-fg" id="ringFg" cx="100" cy="100" r="86"></circle>
+            </svg>
+            <div class="ring-center">
+              <span class="ring-num" id="ringNum">۰٪</span>
+              <span class="ring-label" data-i18n="prog.ring">پیشرفت کلی</span>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="h-section rows-title" data-i18n="prog.sections">بخش‌ها</h2>
+        <div class="rows reveal" id="progressRows"></div>
+
+        <div class="tri-grid">
+          <article class="card tri-card reveal">
+            <span class="t-label" data-i18n="prog.focus">تمرکز فعلی</span>
+            <p id="cardFocus">—</p>
+          </article>
+          <article class="card tri-card reveal">
+            <span class="t-label" data-i18n="prog.last">آخرین تغییر</span>
+            <p id="cardLast">—</p>
+          </article>
+          <article class="card tri-card reveal">
+            <span class="t-label" data-i18n="prog.next">قدم بعدی</span>
+            <p id="cardNext">—</p>
+          </article>
+        </div>
+
+        <p class="prog-note" data-i18n="prog.updated">این صفحه از داده‌ی زنده‌ی پروژه به‌روز می‌شود.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter" class="site-footer"></footer>
+  <div id="modals"></div>
+
+  <script>window.MJ_CONFIG = window.MJ_CONFIG || {};</script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
