@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ارتش — Monji Games</title>
+  <meta name="description" content="ارتش منجی: پیاده نظام، کماندار، سواره نظام و منجنیق — چرخه برتری نیروها و تاکتیک نبرد.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="army" data-title-key="pg.army">
+  <div id="siteHeader"></div>
+
+  <main id="main">
+    <!-- hero -->
+    <section class="page-hero page-hero--tall">
+      <div class="ph-bg"><img src="images/hero-army.jpg" alt=""></div>
+      <div class="container">
+        <div class="hero-copy">
+          <h1 class="hero-title" data-i18n="army.heroTitle"></h1>
+          <p class="hero-sub" data-i18n="army.heroSub"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- units -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="unit-grid">
+          <article class="u-card reveal">
+            <div class="u-media"><img src="images/unit-infantry.jpg" alt="" loading="lazy"></div>
+            <div class="u-body"><span class="u-ic" data-uic="inf"></span><h3 data-i18n="army.units.infantry"></h3></div>
+          </article>
+          <article class="u-card reveal">
+            <div class="u-media"><img src="images/unit-archer.jpg" alt="" loading="lazy"></div>
+            <div class="u-body"><span class="u-ic" data-uic="arch"></span><h3 data-i18n="army.units.archer"></h3></div>
+          </article>
+          <article class="u-card reveal">
+            <div class="u-media"><img src="images/unit-cavalry.jpg" alt="" loading="lazy"></div>
+            <div class="u-body"><span class="u-ic" data-uic="cav"></span><h3 data-i18n="army.units.cavalry"></h3></div>
+          </article>
+          <article class="u-card reveal">
+            <div class="u-media"><img src="images/unit-trebuchet.jpg" alt="" loading="lazy"></div>
+            <div class="u-body"><span class="u-ic" data-uic="treb"></span><h3 data-i18n="army.units.trebuchet"></h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- counter cycle -->
+    <section class="section">
+      <div class="container">
+        <div class="cycle-wrap">
+          <div class="cycle-copy reveal">
+            <h2 class="cycle-title"><span data-i18n="army.cycle1"></span><span class="gold" data-i18n="army.cycle2"></span></h2>
+            <p class="cycle-note"><span data-i18n="army.cycleNote1"></span><br><span data-i18n="army.cycleNote2"></span></p>
+          </div>
+          <div class="cycle-svg-wrap reveal" aria-hidden="true">
+            <svg viewBox="0 0 560 520">
+              <defs>
+                <clipPath id="cycC"><circle r="70"></circle></clipPath>
+                <marker id="cycArrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+                  <path d="M0 0L10 5L0 10z" fill="#C9A24B"></path>
+                </marker>
+              </defs>
+              <!-- cycle arrows -->
+              <g fill="none" stroke="#C9A24B" stroke-width="2.2" opacity="0.9">
+                <path d="M148 240 Q 196 148 244 104" marker-end="url(#cycArrow)"></path>
+                <path d="M316 104 Q 364 148 412 240" marker-end="url(#cycArrow)"></path>
+                <path d="M414 334 Q 280 478 146 334" marker-end="url(#cycArrow)"></path>
+              </g>
+              <!-- x1.5 badges -->
+              <g font-family="inherit" font-size="15" font-weight="700">
+                <g transform="translate(183,142) rotate(-43)">
+                  <rect x="-27" y="-15" width="54" height="30" rx="7" fill="#C9A24B"></rect>
+                  <text text-anchor="middle" dy="5" fill="#14100a" data-i18n="army.cycleMul"></text>
+                </g>
+                <g transform="translate(377,142) rotate(43)">
+                  <rect x="-27" y="-15" width="54" height="30" rx="7" fill="#C9A24B"></rect>
+                  <text text-anchor="middle" dy="5" fill="#14100a" data-i18n="army.cycleMul"></text>
+                </g>
+                <g transform="translate(280,444)">
+                  <rect x="-27" y="-15" width="54" height="30" rx="7" fill="#C9A24B"></rect>
+                  <text text-anchor="middle" dy="5" fill="#14100a" data-i18n="army.cycleMul"></text>
+                </g>
+              </g>
+              <!-- medallions: top = archer, right = cavalry, left = infantry -->
+              <g transform="translate(280,92)">
+                <circle r="84" fill="rgba(8,14,11,0.92)" stroke="#C9A24B" stroke-width="2"></circle>
+                <image href="images/unit-archer.jpg" x="-70" y="-70" width="140" height="140" clip-path="url(#cycC)"></image>
+                <circle r="70" fill="none" stroke="rgba(201,162,75,0.55)" stroke-width="1.5"></circle>
+                <text y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#EBDCB2" data-i18n="army.units.archer"></text>
+              </g>
+              <g transform="translate(452,300)">
+                <circle r="84" fill="rgba(8,14,11,0.92)" stroke="#C9A24B" stroke-width="2"></circle>
+                <image href="images/unit-cavalry.jpg" x="-70" y="-70" width="140" height="140" clip-path="url(#cycC)"></image>
+                <circle r="70" fill="none" stroke="rgba(201,162,75,0.55)" stroke-width="1.5"></circle>
+                <text y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#EBDCB2" data-i18n="army.units.cavalry"></text>
+              </g>
+              <g transform="translate(108,300)">
+                <circle r="84" fill="rgba(8,14,11,0.92)" stroke="#C9A24B" stroke-width="2"></circle>
+                <image href="images/unit-infantry.jpg" x="-70" y="-70" width="140" height="140" clip-path="url(#cycC)"></image>
+                <circle r="70" fill="none" stroke="rgba(201,162,75,0.55)" stroke-width="1.5"></circle>
+                <text y="116" text-anchor="middle" font-size="16" font-weight="700" fill="#EBDCB2" data-i18n="army.units.infantry"></text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- trebuchet full-bleed -->
+    <section class="treb-panel">
+      <div class="treb-bg"><img src="images/army-trebuchet-wide.jpg" alt="" loading="lazy"></div>
+      <div class="container">
+        <div class="treb-copy reveal">
+          <h2 data-i18n="army.trebTitle"></h2>
+          <p data-i18n="army.trebLine"></p>
+          <a class="btn btn-ghost btn-sm" href="city.html">
+            <span data-i18n="army.more"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- campaign / defense -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="camp-grid">
+          <article class="c-card reveal">
+            <div class="c-bg"><img src="images/army-campaign.jpg" alt="" loading="lazy"></div>
+            <div class="c-body">
+              <span class="c-icon" data-cic="arrow"></span>
+              <div>
+                <h3 data-i18n="army.campaignTitle"></h3>
+                <p data-i18n="army.campaignLine"></p>
+              </div>
+            </div>
+          </article>
+          <article class="c-card reveal">
+            <div class="c-bg"><img src="images/army-defense.jpg" alt="" loading="lazy"></div>
+            <div class="c-body">
+              <span class="c-icon" data-cic="shield"></span>
+              <div>
+                <h3 data-i18n="army.defenseTitle"></h3>
+                <p data-i18n="army.defenseLine"></p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="modals"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script>window.MJ_CONFIG = { apiUrl: '' };</script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      function ready(fn) {
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+        else fn();
+      }
+      ready(function () {
+        var ICONS = {
+          inf: '<path d="M12 3l8 3v6c0 5-3.4 8.2-8 9.4C7.4 20.2 4 17 4 12V6z"/><path d="M12 7v8M8.5 10.5h7"/>',
+          arch: '<path d="M5 4c5 2.5 9 6.5 14 16M19 20c-1-7-4-11-10-14M5 4l2 .5M5 4l.5 2M16 7l3-3-3 6"/>',
+          cav: '<path d="M4 18c2-5 6-8 11-8l3-3 3 3-2 1c1 3 0 6-3 7M9 18c0-2 .8-3.6 2-4.8M14 20v-2M18 20v-2"/>',
+          treb: '<path d="M4 20h16M6 20V9l8-5 4 6-5 2M10 20l4-11"/>',
+          arrow: '<path d="M4 12h14M13 6l6 6-6 6"/>',
+          shield: '<path d="M12 3l8 3v6c0 5-3.4 8.2-8 9.4C7.4 20.2 4 17 4 12V6z"/>'
+        };
+        function paint(sel, name) {
+          document.querySelectorAll(sel).forEach(function (el) {
+            el.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[name] + '</svg>';
+          });
+        }
+        paint('[data-uic="inf"]', 'inf');
+        paint('[data-uic="arch"]', 'arch');
+        paint('[data-uic="cav"]', 'cav');
+        paint('[data-uic="treb"]', 'treb');
+        paint('[data-cic="arrow"]', 'arrow');
+        paint('[data-cic="shield"]', 'shield');
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پیشرفت — Monji Games</title>
+  <meta name="description" content="پیشرفت ساخت بازی منجی، قدم به قدم؛ درصد پیشرفت هر بخش به‌صورت زنده.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="progress" data-title-key="pg.progress">
+  <div id="siteHeader"></div>
+
+  <main id="main" class="progress-page">
+    <div class="pg-bg" aria-hidden="true"><img src="images/hero-progress.jpg" alt=""></div>
+
+    <div class="container">
+      <div class="pg-head">
+        <div class="ornament" aria-hidden="true"></div>
+        <p class="eyebrow" style="justify-content:center" data-i18n="prog.eyebrow"></p>
+        <h1 data-i18n="prog.title"></h1>
+      </div>
+
+      <div class="pg-main">
+        <!-- ring -->
+        <div class="ring-wrap">
+          <div class="ring">
+            <div class="ring-glow" aria-hidden="true"></div>
+            <svg class="ring-svg" viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <linearGradient id="goldRing" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#F2DFA8"></stop>
+                  <stop offset="0.55" stop-color="#C9A24B"></stop>
+                  <stop offset="1" stop-color="#8A6A30"></stop>
+                </linearGradient>
+              </defs>
+              <circle class="ring-track" cx="100" cy="100" r="86"></circle>
+              <circle class="ring-arc" id="progRing" cx="100" cy="100" r="86"></circle>
+            </svg>
+            <span class="ring-diamond" aria-hidden="true"></span>
+            <div class="ring-inner">
+              <div class="ring-num" id="progNum" aria-live="polite">0%</div>
+              <div class="ring-label" data-i18n="prog.ringLabel"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section rows -->
+        <div class="rows" id="progRows"></div>
+      </div>
+
+      <!-- three status cards -->
+      <div class="tri-grid">
+        <div class="tri-card reveal">
+          <span class="t-icon" data-tpc="target"></span>
+          <h3 data-i18n="prog.focusTitle"></h3>
+          <p id="progFocus"></p>
+        </div>
+        <div class="tri-card reveal">
+          <span class="t-icon" data-tpc="refresh"></span>
+          <h3 data-i18n="prog.lastTitle"></h3>
+          <p id="progLast"></p>
+        </div>
+        <div class="tri-card reveal">
+          <span class="t-icon" data-tpc="steps"></span>
+          <h3 data-i18n="prog.nextTitle"></h3>
+          <p id="progNext"></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="modals"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script>window.MJ_CONFIG = { apiUrl: '' };</script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      function ready(fn) {
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn);
+        else fn();
+      }
+      ready(function () {
+        var ICONS = {
+          target: '<circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="4"></circle><path d="M12 1.5V4M12 20v2.5M1.5 12H4M20 12h2.5"></path>',
+          refresh: '<path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v5h-5"></path>',
+          steps: '<path d="M3.5 20.5h4.5v-4.5h4.5V11.5H17V7h4.5"></path>'
+        };
+        document.querySelectorAll('[data-tpc]').forEach(function (el) {
+          el.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS[el.getAttribute('data-tpc')] + '</svg>';
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

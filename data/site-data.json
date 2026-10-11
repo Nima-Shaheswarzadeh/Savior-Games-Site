@@ -1,0 +1,392 @@
+{
+  "progress": {
+    "overallPercent": 68,
+    "sections": [
+      { "name_fa": "هسته و زیرساخت", "name_en": "Core & Infrastructure", "percent": 74 },
+      { "name_fa": "شهر و ساختمان‌ها", "name_en": "City & Buildings", "percent": 65 },
+      { "name_fa": "منابع و اقتصاد", "name_en": "Resources & Economy", "percent": 73 },
+      { "name_fa": "ارتش و نبرد", "name_en": "Army & Combat", "percent": 60 },
+      { "name_fa": "جهان و تعاملات", "name_en": "World & Interactions", "percent": 64 },
+      { "name_fa": "UI و گرافیک", "name_en": "UI & Graphics", "percent": 71 },
+      { "name_fa": "تست و بهینه‌سازی", "name_en": "Testing & Optimization", "percent": 58 }
+    ],
+    "currentFocus_fa": "تکمیل شهرها و بهینه‌سازی عملکرد و تکمیل محیط‌ها",
+    "currentFocus_en": "Completing cities, tuning performance and finishing environments",
+    "lastChange_fa": "بهینه‌سازی سیستم اقتصادی و متعادل‌سازی فرایند ساخت ساختمان‌ها",
+    "lastChange_en": "Optimized the economy system and balanced building construction",
+    "nextStep_fa": "تکمیل بخش ماموریت‌ها و آغاز فاز تست محتوای اصلی",
+    "nextStep_en": "Finishing the missions section and starting main content playtests"
+  },
+  "city": {
+    "heroes": {
+      "default": {
+        "title_fa": "شهر و ساختمان‌ها",
+        "title_en": "City & Buildings",
+        "sub_fa": "هر ساختمان، بخشی از قدرت حکومت توست.",
+        "sub_en": "Every building is part of your dynasty's power.",
+        "para_fa": "شهر خود را گسترش بده، ساختمان‌های مختلف بساز و یک حکومت قدرتمند و منسجم شکل بده.",
+        "para_en": "Expand your city, raise all kinds of buildings and shape a strong, cohesive dynasty.",
+        "bg": "images/hero-city.jpg"
+      },
+      "military": {
+        "title_fa": "نظامی",
+        "title_en": "Military",
+        "sub_fa": "قدرت، امنیت و گسترش قلمرو.",
+        "sub_en": "Power, security and expansion of territory.",
+        "para_fa": "با ترغیب، تجهیز و فرماندهی نیروهای خود، شهر و سرزمین‌تان را محافظت کرده و برای فتح سرزمین‌های جدید آماده شوید.",
+        "para_en": "Recruit, equip and command your forces to protect your city and lands and prepare to conquer new territories.",
+        "bg": "images/hero-army.jpg"
+      }
+    },
+    "levels": {
+      "city": {
+        "title_fa": "با ارتقای ساختمان‌ها، شهر خود را رشد می‌کند.",
+        "title_en": "Upgrade your buildings to grow your city.",
+        "title_part1_fa": "با ارتقای ساختمان‌ها،",
+        "title_part1_en": "Upgrade your buildings,",
+        "title_part2_fa": "شهر خود را رشد می‌کند.",
+        "title_part2_en": "and your city grows.",
+        "sub_fa": "هر ساختمان در سطوح بالاتر ظاهر باشکوه‌تری پیدا می‌کند و کاربری بیشتری خواهد داشت.",
+        "sub_en": "Every building gains a grander look and new uses at higher levels.",
+        "stages": [
+          { "label_fa": "سطح ۱", "label_en": "Level 1", "image": "images/building-mosque.jpg" },
+          { "label_fa": "سطح ۳", "label_en": "Level 3", "image": "images/city-banner.jpg" },
+          { "label_fa": "سطح ۵", "label_en": "Level 5", "image": "images/hero-city.jpg" }
+        ]
+      },
+      "army": {
+        "title_fa": "با ارتش قدرتمند، آینده را فتح کنید.",
+        "title_en": "Conquer the future with a powerful army.",
+        "title_part1_fa": "با ارتش قدرتمند،",
+        "title_part1_en": "With a powerful army,",
+        "title_part2_fa": "آینده را فتح کنید.",
+        "title_part2_en": "conquer the future.",
+        "sub_fa": "نیروهای خود را ارتقا دهید و به یکی از قدرتمندترین ارتش‌های منطقه تبدیل شوید.",
+        "sub_en": "Upgrade your forces and become one of the strongest armies in the region.",
+        "stages": [
+          { "label_fa": "سطح ۱", "label_en": "Level 1", "image": "images/unit-infantry.jpg", "sm": true },
+          { "label_fa": "سطح ۲", "label_en": "Level 2", "image": "images/unit-archer.jpg", "sm": true },
+          { "label_fa": "سطح ۳", "label_en": "Level 3", "image": "images/unit-cavalry.jpg", "sm": true },
+          { "label_fa": "سطح ۴", "label_en": "Level 4", "image": "images/army-defense.jpg" },
+          { "label_fa": "سطح ۵", "label_en": "Level 5", "image": "images/army-campaign.jpg" }
+        ]
+      }
+    },
+    "tabs": [
+      {
+        "id": "defense",
+        "icon": "rook",
+        "title_fa": "دفاعی و پشتیبانی",
+        "title_en": "Defense & Support",
+        "sub_fa": "دفاع و پشتیبانی شهر",
+        "sub_en": "City defense & support",
+        "hero": "default",
+        "level": "city"
+      },
+      {
+        "id": "economy",
+        "icon": "coins",
+        "title_fa": "اقتصادی",
+        "title_en": "Economy",
+        "sub_fa": "تولید و تجارت",
+        "sub_en": "Production & trade",
+        "hero": "default",
+        "level": "city"
+      },
+      {
+        "id": "military",
+        "icon": "swords",
+        "title_fa": "نظامی",
+        "title_en": "Military",
+        "sub_fa": "ارتش و قدرت جنگی",
+        "sub_en": "Army & war power",
+        "hero": "military",
+        "level": "army"
+      },
+      {
+        "id": "government",
+        "icon": "crown",
+        "title_fa": "حکومتی",
+        "title_en": "Government",
+        "sub_fa": "مدیریت و توسعه حکومت",
+        "sub_en": "Governance & development",
+        "hero": "default",
+        "level": "city"
+      }
+    ],
+    "buildings": [
+      {
+        "tab": "government",
+        "name_fa": "پژوهشی سرا",
+        "name_en": "The Research House",
+        "line_fa": "پیشرفت علم و فناوری.",
+        "line_en": "Advancing science and technology.",
+        "image": "images/building-mosque.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "government",
+        "name_fa": "مرکز خلافت",
+        "name_en": "The Caliph Center",
+        "line_fa": "مدیریت اقدامات سیاسی و نظامی.",
+        "line_en": "Managing political and military operations.",
+        "image": "images/hero-city.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "government",
+        "name_fa": "مسجد",
+        "name_en": "The Mosque",
+        "line_fa": "برای به دست آوردن قهرمان‌های نظامی.",
+        "line_en": "To earn military heroes.",
+        "image": "images/b-mosque.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "military",
+        "name_fa": "سپاه نیروها",
+        "name_en": "The Army of Forces",
+        "line_fa": "استخدام، آموزش و مدیریت انواع نیروهای زمینی، سواره و خاص.",
+        "line_en": "Recruiting, training and managing ground, mounted and special forces.",
+        "image": "images/hero-army.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "military",
+        "name_fa": "تاکتیک و استراتژی حمله",
+        "name_en": "Offensive Tactics & Strategy",
+        "line_fa": "طراحی نقشه‌های تهاجمی، هماهنگی نیروها و انتخاب مسیرهای نبرد.",
+        "line_en": "Designing assault plans, coordinating forces and choosing battle routes.",
+        "image": "images/army-trebuchet-wide.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "military",
+        "name_fa": "تاکتیک و استراتژی دفاع",
+        "name_en": "Defensive Tactics & Strategy",
+        "line_fa": "برنامه‌ریزی خطوط دفاعی، تقویت استحکامات و ساماندهی نیروها برای مقاومت در برابر دشمن.",
+        "line_en": "Planning defense lines, reinforcing fortifications and organizing forces to resist the enemy.",
+        "image": "images/army-defense.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "military",
+        "name_fa": "هزینه لشکرکشی و حمله",
+        "name_en": "Campaign & Attack Costs",
+        "line_fa": "برآورد هزینه‌های اعزام و نگهداری لشکر، تدارکات و تلفات در هنگام حمله.",
+        "line_en": "Estimating deployment and upkeep costs, logistics and casualties during attacks.",
+        "image": "images/army-campaign.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "economy",
+        "name_fa": "جمع‌آوری منابع",
+        "name_en": "Resource Gathering",
+        "line_fa": "با سربازهای کارگر می‌توانید منابع جمع‌آوری کنید.",
+        "line_en": "Gather resources with your worker soldiers.",
+        "image": "images/res-wood.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "economy",
+        "name_fa": "تولید منابع",
+        "name_en": "Resource Production",
+        "line_fa": "مزرعه، جوب‌بری، معدن، سنگ و آهن؛ پایه‌های درآمدی شهر شما.",
+        "line_en": "Farms, canals, mines, stone and iron; the income pillars of your city.",
+        "image": "images/res-wheat.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "economy",
+        "name_fa": "کاروانسرا",
+        "name_en": "The Caravanserai",
+        "line_fa": "افزایش تجارت و جابه‌جایی منابع.",
+        "line_en": "Boosting trade and resource movement.",
+        "image": "images/building-market.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "economy",
+        "name_fa": "انبار",
+        "name_en": "The Warehouse",
+        "line_fa": "حواست به انبار باشه که پر نشود.",
+        "line_en": "Watch your warehouse so it doesn't overflow.",
+        "image": "images/home-hero.jpg",
+        "filter": "saturate(0.92) brightness(0.95)"
+      },
+      {
+        "tab": "defense",
+        "name_fa": "متحدین",
+        "name_en": "Allies",
+        "line_fa": "متحدین شما می‌توانند برای شما ارتش تجهیز کنند و خود را اعلام کنند.",
+        "line_en": "Your allies can equip armies for you and declare themselves.",
+        "image": "images/hero-army.jpg",
+        "filter": "hue-rotate(-12deg) saturate(0.9)"
+      },
+      {
+        "tab": "defense",
+        "name_fa": "شفاخانه",
+        "name_en": "The Hospital",
+        "line_fa": "درمان سربازان زخمی پس از نبرد.",
+        "line_en": "Treating wounded soldiers after battle.",
+        "image": "images/building-hospital.jpg",
+        "filter": ""
+      },
+      {
+        "tab": "defense",
+        "name_fa": "برج دیده‌بانی",
+        "name_en": "The Watchtower",
+        "line_fa": "رصد تهدیدها و مراقبت از مرزها.",
+        "line_en": "Spotting threats and watching the borders.",
+        "image": "images/city-banner.jpg",
+        "filter": "hue-rotate(16deg) saturate(0.85)"
+      },
+      {
+        "tab": "defense",
+        "name_fa": "دیوار",
+        "name_en": "The Wall",
+        "line_fa": "افزایش استحکام و امنیت شهر.",
+        "line_en": "Strengthening the city's fortification and safety.",
+        "image": "images/hero-city.jpg",
+        "filter": "hue-rotate(-14deg) brightness(0.92)"
+      }
+    ]
+  },
+  "resources": {
+    "cards": [
+      {
+        "name_fa": "گندم",
+        "name_en": "Wheat",
+        "line_fa": "تأمین غذای ارتش و مردم شهر",
+        "line_en": "Feeding your army and city people",
+        "icon": "wheat",
+        "image": "images/res-wheat.jpg"
+      },
+      {
+        "name_fa": "چوب",
+        "name_en": "Wood",
+        "line_fa": "برای ساخت‌وساز و توسعه‌ی شهر",
+        "line_en": "For construction and city development",
+        "icon": "wood",
+        "image": "images/res-wood.jpg"
+      },
+      {
+        "name_fa": "سنگ",
+        "name_en": "Stone",
+        "line_fa": "ماده‌ی اصلی ساختمان‌ها و دیوارها",
+        "line_en": "The main material of buildings and walls",
+        "icon": "stone",
+        "image": "images/res-stone.jpg"
+      },
+      {
+        "name_fa": "آهن",
+        "name_en": "Iron",
+        "line_fa": "برای تجهیزات و نیازهای نظامی",
+        "line_en": "For equipment and military needs",
+        "icon": "iron",
+        "image": "images/res-iron.jpg"
+      },
+      {
+        "name_fa": "نقره",
+        "name_en": "Silver",
+        "line_fa": "منبع ارزشمند برای تجارت و ارتقا",
+        "line_en": "A valuable source for trade and upgrades",
+        "icon": "silver",
+        "image": "images/res-silver.jpg"
+      },
+      {
+        "name_fa": "یاقوت",
+        "name_en": "Ruby",
+        "line_fa": "منبع کمیاب برای بهسازی‌های ویژه",
+        "line_en": "A rare source for special enhancements",
+        "icon": "ruby",
+        "image": "images/res-ruby.jpg"
+      }
+    ]
+  },
+  "world": {
+    "cards": [
+      {
+        "name_fa": "بازار و تجارت",
+        "name_en": "Market & Trade",
+        "line_fa": "بازار شهرت؛ جایی که منابع جابه‌جا می‌شوند و اقتصاد زنده می‌ماند.",
+        "line_en": "The city bazaar; where resources move and the economy stays alive.",
+        "icon": "market",
+        "image": "images/building-market.jpg"
+      },
+      {
+        "name_fa": "اتحاد",
+        "name_en": "Alliance",
+        "line_fa": "پیمان‌ها و اتحاد‌ها؛ محور اصلی جهان منجی است.",
+        "line_en": "Pacts and alliances are the core axis of the Monji world.",
+        "icon": "alliance",
+        "image": "images/hero-world.jpg"
+      },
+      {
+        "name_fa": "فورت‌ها",
+        "name_en": "Forts",
+        "line_fa": "قلعه‌ها و پادگان‌ها؛ نقطه‌ی شروع کنترل سرزمین.",
+        "line_en": "Castles and garrisons; the starting point of territorial control.",
+        "icon": "fort",
+        "image": "images/hero-progress.jpg"
+      }
+    ]
+  },
+  "team": [
+    { "order": 1, "name_fa": "سرکار خانم هیناتا", "name_en": "Ms. Hinata", "role_fa": "کدنویس فعال", "role_en": "Active Developer", "portrait": "images/team-sil-female.png", "gender": "F" },
+    { "order": 2, "name_fa": "سرکار خانم فاطمه دیدبان", "name_en": "Ms. Fatemeh Didban", "role_fa": "کدنویس فعال", "role_en": "Active Developer", "portrait": "images/team-sil-female.png", "gender": "F" },
+    { "order": 3, "name_fa": "محمد حسینی نصیری", "name_en": "Mohammad Hosseini Nassiri", "role_fa": "مدیر فنی پروژه", "role_en": "Technical Director", "portrait": "images/team-sil-male.png", "gender": "M" },
+    { "order": 4, "name_fa": "آرشام زند", "name_en": "Arasham Zand", "role_fa": "ایده‌پرداز، مدیر توسعه پروژه", "role_en": "Visionary & Development Director", "portrait": "images/team-sil-male.png", "gender": "M" },
+    { "order": 5, "name_fa": "نیما شهسوارزاده", "name_en": "Nima Shahsavarzadeh", "role_fa": "کدنویس فعال", "role_en": "Active Developer", "portrait": "images/team-sil-male.png", "gender": "M" },
+    { "order": 6, "name_fa": "امیرعلی خدادادی‌پور", "name_en": "Amirali Khodadadipour", "role_fa": "کدنویس و گیم‌دیزاینر", "role_en": "Developer & Game Designer", "portrait": "images/team-sil-male.png", "gender": "M" },
+    { "order": 7, "name_fa": "سید مهدی سجادی", "name_en": "Seyed Mehdi Sajjadi", "role_fa": "کدنویس", "role_en": "Developer", "portrait": "images/team-sil-male.png", "gender": "M" },
+    { "order": 8, "name_fa": "مجتبی بیک‌پور", "name_en": "Mojtaba Baykpur", "role_fa": "کدنویس", "role_en": "Developer", "portrait": "images/team-sil-male.png", "gender": "M" },
+    { "order": 9, "name_fa": "فاضل علیزاده", "name_en": "Fazel Alizadeh", "role_fa": "کدنویس", "role_en": "Developer", "portrait": "images/team-sil-male.png", "gender": "M" }
+  ],
+  "devlogs": [
+    {
+      "title_fa": "شهر زنده شد: پیشرفت هسته‌ی بازی",
+      "title_en": "The city comes alive: core progress",
+      "date": "2026-09-18",
+      "description_fa": "ساختن، ارتقا و مدیریت ساختمان‌ها حالا در حلقه‌ی بازی کار می‌کند. ببین شهر منجی چطور نفس می‌کشد.",
+      "description_en": "Building, upgrading and managing buildings now works in the game loop. See how Monji's city breathes.",
+      "video": "",
+      "thumbnail": "images/city-banner.jpg",
+      "category": "dev",
+      "featured": true
+    },
+    {
+      "title_fa": "تصویرسازی میدان نبرد",
+      "title_en": "Painting the battlefield",
+      "date": "2026-09-07",
+      "description_fa": "از اسکچ تا قاب نهایی؛ ساخت تصاویر سینمایی میدان نبرد.",
+      "description_en": "From sketch to final frame; making the cinematic battlefield art.",
+      "video": "",
+      "thumbnail": "images/battle-hero.jpg",
+      "category": "graphics",
+      "featured": false
+    },
+    {
+      "title_fa": "پشت صحنه‌ی چرخه‌ی برتری",
+      "title_en": "Behind the counter cycle",
+      "date": "2026-08-25",
+      "description_fa": "چرا ×۱.۵؟ داستان طراحی چرخه‌ی پیاده، کمان و اسب.",
+      "description_en": "Why ×1.5? The design story of infantry, bow and horse.",
+      "video": "",
+      "thumbnail": "images/home-hero.jpg",
+      "category": "gameplay",
+      "featured": false
+    },
+    {
+      "title_fa": "داده‌ی زنده برای بازی در حال ساخت",
+      "title_en": "Live data for a game in the making",
+      "date": "2026-08-10",
+      "description_fa": "سایت منجی از گوگل‌شیت نفس می‌کشد؛ معماری داده و دلیل انتخابش.",
+      "description_en": "Monji's site breathes from a Google Sheet; the data architecture and why we chose it.",
+      "video": "",
+      "thumbnail": "images/world-banner.jpg",
+      "category": "tech",
+      "featured": false
+    }
+  ]
+}

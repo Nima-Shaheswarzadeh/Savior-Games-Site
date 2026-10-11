@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>منجی — Monji Games</title>
+  <meta name="description" content="منجی؛ بازی استراتژی و مدیریت حکومت. شهری بساز، ارتش بسپار، سرزمین را فتح کن.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="home" data-title-key="pg.home">
+  <div id="siteHeader"></div>
+
+  <main id="main">
+    <!-- hero -->
+    <section class="page-hero page-hero--tall">
+      <div class="ph-bg"><img src="images/home-hero.jpg" alt=""></div>
+      <div class="container">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="home.eyebrow"></p>
+          <h1 class="hero-title" data-i18n="home.title"></h1>
+          <p class="hero-sub" data-i18n="home.sub"></p>
+          <p class="hero-para" data-i18n="home.para"></p>
+          <div class="hero-cta">
+            <button class="btn btn-gold" type="button" data-open-modal="beta" data-i18n="home.ctaPlay"></button>
+            <a class="btn btn-ghost" href="progress.html" data-i18n="home.ctaProgress"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about / pillars -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sec-head reveal">
+          <div class="ornament" aria-hidden="true"></div>
+          <p class="eyebrow" style="justify-content:center" data-i18n="nav.about"></p>
+          <h2 class="sec-title" data-i18n="home.aboutT"></h2>
+          <p class="lead" data-i18n="home.aboutP"></p>
+        </div>
+
+        <div class="home-feats">
+          <a class="hf-card reveal" href="city.html">
+            <div class="hf-bg"><img src="images/hero-city.jpg" alt="" loading="lazy"></div>
+            <div class="hf-body">
+              <h3 data-i18n="home.feat1t"></h3>
+              <p data-i18n="home.feat1l"></p>
+              <span class="w-link" style="justify-content:flex-start"><span data-i18n="home.more"></span></span>
+            </div>
+          </a>
+          <a class="hf-card reveal" href="resources.html">
+            <div class="hf-bg"><img src="images/res-wheat.jpg" alt="" loading="lazy"></div>
+            <div class="hf-body">
+              <h3 data-i18n="home.feat2t"></h3>
+              <p data-i18n="home.feat2l"></p>
+              <span class="w-link" style="justify-content:flex-start"><span data-i18n="home.more"></span></span>
+            </div>
+          </a>
+          <a class="hf-card reveal" href="army.html">
+            <div class="hf-bg"><img src="images/hero-army.jpg" alt="" loading="lazy"></div>
+            <div class="hf-body">
+              <h3 data-i18n="home.feat3t"></h3>
+              <p data-i18n="home.feat3l"></p>
+              <span class="w-link" style="justify-content:flex-start"><span data-i18n="home.more"></span></span>
+            </div>
+          </a>
+          <a class="hf-card reveal" href="world.html">
+            <div class="hf-bg"><img src="images/hero-world.jpg" alt="" loading="lazy"></div>
+            <div class="hf-body">
+              <h3 data-i18n="home.feat4t"></h3>
+              <p data-i18n="home.feat4l"></p>
+              <span class="w-link" style="justify-content:flex-start"><span data-i18n="home.more"></span></span>
+            </div>
+          </a>
+        </div>
+
+        <!-- progress strip -->
+        <div class="home-strip reveal">
+          <div class="strip-ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+              <circle class="ring-arc" id="homeStripArc" cx="60" cy="60" r="52"></circle>
+            </svg>
+            <span class="strip-num" id="homeStripNum">0%</span>
+          </div>
+          <div class="strip-text">
+            <h3 data-i18n="home.stripTitle"></h3>
+            <p data-i18n="home.stripLabel"></p>
+          </div>
+          <a class="btn btn-gold btn-sm" href="progress.html" data-i18n="home.stripCta"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- quote -->
+    <section class="quote-banner">
+      <div class="container">
+        <div class="ornament reveal" aria-hidden="true"></div>
+        <p class="q-text reveal" data-i18n="quote.text"></p>
+        <p class="q-en reveal" data-i18n="quote.en"></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="modals"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script>window.MJ_CONFIG = { apiUrl: '' };</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

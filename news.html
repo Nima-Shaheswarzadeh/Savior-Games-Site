@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رسانه — Monji Games</title>
+  <meta name="description" content="رسانه منجی: دیوگلگ‌ها، اخبار و اطلاعیه‌ها و گرافیک بازی.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="news" data-title-key="pg.news">
+  <div id="siteHeader"></div>
+
+  <main id="main">
+    <div class="container">
+      <div class="page-head">
+        <div class="ornament" aria-hidden="true"></div>
+        <h1 data-i18n="news.title"></h1>
+        <p class="lead" data-i18n="news.sub"></p>
+      </div>
+
+      <!-- filters -->
+      <div class="pills" id="newsPills" role="group" aria-label="News filters" style="margin-top:18px">
+        <button class="pill active" type="button" data-filter="all" data-i18n="news.all"></button>
+        <button class="pill" type="button" data-filter="dev" data-i18n="news.dev"></button>
+        <button class="pill" type="button" data-filter="announce" data-i18n="news.announce"></button>
+        <button class="pill" type="button" data-filter="art" data-i18n="news.art"></button>
+        <button class="pill" type="button" data-filter="interview" data-i18n="news.interview"></button>
+      </div>
+
+      <!-- featured -->
+      <article class="featured" id="featuredCard" tabindex="0" role="button" data-i18n-aria="a11y.play">
+        <div class="feat-media">
+          <img src="images/city-banner.jpg" alt="">
+          <button class="play-btn" type="button" tabindex="-1" data-i18n-aria="a11y.play">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg>
+          </button>
+        </div>
+        <div class="feat-body">
+          <p class="feat-label" data-i18n="news.featured"></p>
+          <span class="chip feat-cat" data-cat="dev"></span>
+          <h3 class="feat-title"></h3>
+          <p class="feat-desc"></p>
+          <div class="feat-meta"><span class="feat-date"></span></div>
+        </div>
+      </article>
+
+      <!-- previous -->
+      <h2 class="news-prev-title sec-title reveal" data-i18n="news.prev"></h2>
+      <div class="devlog-grid" id="devlogGrid"></div>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="modals"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/data-fallback.js"></script>
+  <script>window.MJ_CONFIG = { apiUrl: '' };</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
